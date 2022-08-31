@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:title="Serviços">
+            <menu>
+                <item
+                    android:id="@+id/mapp"
+                    android:checked="true"
+                    android:icon="@drawable/ic_baseline_smartphone"
+                    android:title="App" />
+                <item
+                    android:id="@+id/msite"
+                    android:icon="@drawable/ic_baseline_remove_from_queue"
+                    android:title="Site" />
+                <item
+                    android:id="@+id/mseguranca"
+                    android:icon="@drawable/ic_baseline_vpn_lock"
+                    android:title="Segurança" />
+                <item
+                    android:id="@+id/mdados"
+                    android:icon="@drawable/ic_baseline_code"
+                    android:title="Banco de dados" />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:title="templates">
+            <menu>
+                <item
+                    android:id="@+id/mtapp"
+                    android:checked="true"
+                    android:icon="@drawable/ic_baseline_smartphone"
+                    android:title="App" />
+                <item
+                    android:id="@+id/mtsite"
+                    android:icon="@drawable/ic_baseline_remove_from_queue"
+                    android:title="Site" />
+                <item
+                    android:id="@+id/mtseguranca"
+                    android:icon="@drawable/ic_baseline_vpn_lock"
+                    android:title="Segurança" />
+                <item
+                    android:id="@+id/mtdados"
+                    android:icon="@drawable/ic_baseline_code"
+                    android:title="Banco de dados" />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:title="Prontos">
+            <menu>
+                <item
+                    android:id="@+id/mpapp"
+                    android:checked="true"
+                    android:icon="@drawable/ic_baseline_smartphone"
+                    android:title="App" />
+                <item
+                    android:id="@+id/mpsite"
+                    android:icon="@drawable/ic_baseline_remove_from_queue"
+                    android:title="Site" />
+                <item
+                    android:id="@+id/mpseguranca"
+                    android:icon="@drawable/ic_baseline_vpn_lock"
+                    android:title="Segurança" />
+                <item
+                    android:id="@+id/mpdados"
+                    android:icon="@drawable/ic_baseline_code"
+                    android:title="Banco de dados" />
+            </menu>
+        </item>
+    </group>
+</menu>
