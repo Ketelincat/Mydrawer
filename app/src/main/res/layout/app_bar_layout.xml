@@ -15,8 +15,8 @@
             app:navigationIcon="@drawable/ic_baseline_menu"
             app:navigationIconTint="#fff"
             style="@style/Widget.MaterialComponents.Toolbar.Primary"
-            app:title="Catspeed"
-            android:background="#FF5C89"/>
+            app:title="Vegan/ receitas veganas"
+            android:background="#4CAF50"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
