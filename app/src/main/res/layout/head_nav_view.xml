@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="230dp"
-    android:background="#507E51"
+    android:background="#FF507E51"
     android:fitsSystemWindows="true"
     android:gravity="center_vertical|center_horizontal"
     android:orientation="vertical">
@@ -12,13 +12,13 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/gato"
-        app:civ_border_color="#FFFFFF"
+        app:civ_border_color="#fff"
         app:civ_border_width="2dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SaraKet"
+        android:text="Saraket"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SaraKet@gmail.com"
+        android:text="saraket@gmail.com"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         android:textStyle="bold" />

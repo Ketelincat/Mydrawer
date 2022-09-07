@@ -7,36 +7,40 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
 
-public class GalleryFragment extends Fragment {
+public class receitas extends Fragment {
     ListView LSreceitas;
 
-    String tituloGallery[] = {"Livro", "Bicicleta", "Carro", "Moto"};
-    int imagemGallery[] = {R.drawable.livro, R.drawable.bike,
-            R.drawable.carro, R.drawable.moto};
+    String tituloReceita[] = {"Maxixe do reino", "capuchinha", "peixinho", "taioba", "bertalha"};
+    int imagemReceita[] = {R.drawable.maxixe_do_reino, R.drawable.capuchinha,
+            R.drawable.peixinho, R.drawable.taioba, R.drawable.bertalha};
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_gallery, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_receitas, container, false);
 
         LSreceitas = view.findViewById(R.id.idListareceitas);
 
-        MyAdapterGallery adapterGallery = new MyAdapterGallery();
+        MyAdapterreceitas adapterReceitas = new MyAdapterreceitas();
 
-        LSreceitas.setAdapter(adapterGallery);
+        LSreceitas.setAdapter(adapterReceitas);
 
 
         return view;
     }
 
-    public class MyAdapterGallery extends BaseAdapter {
+    public class MyAdapterreceitas extends BaseAdapter {
 
         @Override
         public int getCount() {
-            return imagemGallery.length;
+            return imagemReceita.length;
         }
 
         @Override
@@ -51,17 +55,17 @@ public class GalleryFragment extends Fragment {
 
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
-            ImageView imgGallery;
-            TextView txtGalery;
+            ImageView imgreceita;
+            TextView txtreceita;
 
 
-            View v = getLayoutInflater().inflate(R.layout.modelo_gallery, null);
+            View v = getLayoutInflater().inflate(R.layout.fragment_receitas, null);
 
-            imgGallery = v.findViewById(R.id.modeloImagemGallery);
-            txtGalery = v.findViewById(R.id.modeloTxtImagem);
+            imgreceita = v.findViewById(R.id.modeloImagemReceita);
+            txtreceita= v.findViewById(R.id.modeloTxtreceita);
 
-            imgGallery.setImageResource(imagemGallery[i]);
-            txtGalery.setText(tituloGallery[i]);
+            imgreceita.setImageResource(imagemReceita[i]);
+            txtreceita.setText(tituloReceita[i]);
 
 
             return v;
