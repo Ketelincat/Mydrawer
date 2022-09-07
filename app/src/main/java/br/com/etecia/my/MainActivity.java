@@ -52,36 +52,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.mImport:
+            case R.id.mreceita:
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.idContainerNav, new ImportFragment()).commit();
 
                 break;
-            case R.id.mGallery:
+            case R.id.msite:
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.idContainerNav, new receitas()).commit();
                 break;
-            case R.id.mSlideShow:
+            case R.id.msair:
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.idContainerNav, new bancoFragment()).commit();
                 break;
-            case R.id.mSend:
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.idContainerNav, new SendFragment()).commit();
-            case R.id.mShare:
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.idContainerNav, new ShareFragment()).commit();
-                break;
-            case R.id.mSettings:
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.idContainerNav, new SettingsFragment()).commit();
-                break;
+
             default:
 
         }
